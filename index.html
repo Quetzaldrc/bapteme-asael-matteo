@@ -282,9 +282,11 @@
 
   .program-row{
     display:flex;
+    flex-direction:column;
     align-items:center;
-    gap:18px;
-    padding:14px 4px;
+    gap:8px;
+    padding:18px 4px;
+    text-align:center;
   }
   .program-row + .program-row{
     border-top:1px solid var(--ring);
@@ -306,6 +308,9 @@
     height:18px;
   }
 
+  .program-text{
+    text-align:center;
+  }
   .program-text .top{
     font-size:11px;
     letter-spacing:0.14em;
@@ -320,6 +325,20 @@
     color:var(--charcoal);
     margin:0;
     line-height:1.4;
+  }
+
+  .dresscode-swatches{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:8px;
+  }
+  .swatch{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 1px 3px rgba(36,66,75,0.15);
   }
 
   /* ---------- FORM ELEMENTS ---------- */
@@ -555,6 +574,26 @@
         <p class="main">Domicile de la famille<br>N°18 Av. Kasaï / Kintambo</p>
       </div>
     </div>
+
+    <div class="program-row">
+      <div class="program-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#B8912F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 4 4 7v3h3v10h10V10h3V7l-5-3"/>
+          <path d="M9 4a3 3 0 0 0 6 0"/>
+        </svg>
+      </div>
+      <div class="program-text">
+        <p class="top">Dress code</p>
+        <p class="main">Chic et élégant</p>
+        <div class="dresscode-swatches">
+          <span class="swatch" style="background:#5C8CA8;"></span>
+          <span class="swatch" style="background:#7EB8DE;"></span>
+          <span class="swatch" style="background:#A8A8A8;"></span>
+          <span class="swatch" style="background:#AAB9C4;"></span>
+          <span class="swatch" style="background:#DCE6EA;"></span>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="card" id="nameCard">
@@ -608,7 +647,7 @@
     <p class="confirm-msg" id="cancelConfirm">Votre annulation a bien été prise en compte.</p>
   </div>
 
-  <footer>Charles Dunia &amp; Winy-Laure Mwamini · 25 juillet 2026</footer>
+  <footer>© QuetzalDRC 2026</footer>
 
 </div>
 
